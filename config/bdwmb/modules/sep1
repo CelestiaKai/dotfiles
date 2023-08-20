@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $SEPERATOR1
+
+bsep1() {
+    printf '%s' "$SEPERATOR1"
+}

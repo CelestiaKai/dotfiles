@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $SHELL, basename
+
+bshell() {
+    printf '%s' "$(basename "$SHELL")"
+}

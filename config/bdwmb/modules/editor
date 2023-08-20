@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $VISUAL || $EDITOR
+
+beditor() {
+    printf '%s' "$(basename "${VISUAL:-$EDITOR}")"
+}

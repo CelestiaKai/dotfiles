@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $LOAD_FIELDS, cut
+
+bload_average() {
+    printf "AVG %s" "$(cut -d " " -f "${LOAD_FIELDS:-1,2,3}" /proc/loadavg)"
+}

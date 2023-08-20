@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: uname
+
+bkernel() {
+    printf "%s" "$(uname -r)"
+}

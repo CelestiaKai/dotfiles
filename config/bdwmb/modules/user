@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: NONE
+
+buser() {
+    printf "%s" "$USER"
+}

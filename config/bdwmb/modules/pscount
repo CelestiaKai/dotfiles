@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: ps, wc
+
+bpscount() {
+    printf '%d' "$(ps -e --no-headers | wc -l)"
+}

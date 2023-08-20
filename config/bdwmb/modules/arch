@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: arch
+
+barch() {
+    printf "%s" "$(arch)"
+}

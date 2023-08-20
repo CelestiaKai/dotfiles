@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# DEPENDS ON: strings, awk
+
+binit() {
+    init="$(strings /sbin/init |
+        awk 'match($0, /(upstart|systemd|sysvinit|runit|openrc|s6|66)/) { print substr($0, RSTART, RLENGTH); exit;  }')"
+
+    printf "%s" "${init:-init}"
+}

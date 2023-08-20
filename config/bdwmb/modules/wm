@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# DEPENDS ON: xprop
+
+bwm() {
+    [ "$DISPLAY" ] || return
+
+    command -v xprop >/dev/null && {
+        id="$(xprop -root -notype _NET_SUPPORTING_WM_CHECK)"
+        id="${id##* }"
+        wm="$(xprop -id "$id" -notype -len 25 -f _NET_WM_NAME 8t)"
+
+        case "$wm" in
+        *'_NET_WM_NAME = '*)
+            wm=${wm##*_NET_WM_NAME = \"}
+            wm=${wm%%\"*}
+            ;;
+
+        *) wm= ;;
+        esac
+    }
+
+    printf '%s' "$wm"
+}

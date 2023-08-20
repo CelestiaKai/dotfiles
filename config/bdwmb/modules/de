@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $XDG_CURRENT_DESKTOP || $DESKTOP_SESSION
+
+bde() {
+    printf '%s' "${XDG_CURRENT_DESKTOP:-${DESKTOP_SESSION}}"
+}

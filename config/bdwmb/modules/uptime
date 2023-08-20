@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: uptime, awk, date, $UPFORMAT
+
+buptime() {
+    printf '%s' "$(date -d@"$(awk '{print $1}' /proc/uptime)" -u -- "+$UPFORMAT")"
+}

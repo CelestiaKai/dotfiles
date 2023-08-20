@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $DRIVE_CHECK_MOUNT
+
+bdrive() {
+    DF="$(df -h "${DRIVE_CHECK_MOUNT:-/}" | tail -n 1)"
+    DISK_LEFT="$(echo "$DF" | awk '{ print $4 }')"
+
+    printf 'D %s' "$DISK_LEFT"
+}

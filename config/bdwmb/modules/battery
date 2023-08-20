@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $BATTERY_NAME, $BATTERY_SHOW_STATUS
+
+bbattery() {
+    CHARGE=$(cat "/sys/class/power_supply/${BATTERY_NAME:-BAT0}/capacity")
+    STATUS=$(cat "/sys/class/power_supply/${BATTERY_NAME:-BAT0}/status")
+
+    # TODO: ADD MORE STATUSES (NEED A LIST OF ALL STATUSES)
+    if [ "$BATTERY_SHOW_STATUS" -ne 1 ]; then
+        printf 'B %s%%' "$CHARGE"
+    else
+        if [ "$STATUS" = "Charging" ]; then
+            printf "B (c) %s%%" "$CHARGE"
+        else
+            printf "B (d) %s%%" "$CHARGE"
+        fi
+    fi
+}

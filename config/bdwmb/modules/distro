@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: awk, grep
+
+bdistro() {
+    printf "%s" "$(grep -io '^NAME=.*$' </etc/os-release | awk '{split($0,name,"="); print tolower(name[2]) }')"
+}

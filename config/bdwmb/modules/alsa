@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+# DEPENDS ON: amixer
+
+balsa() {
+    STATUS="$(amixer sget Master | tail -n1 | sed -r "s/.*\[(.*)\]/\1/")"
+    VOL="$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")"
+
+    if [ "$STATUS" = "off" ]; then
+        printf "V MUTE"
+    else
+        printf "V %s%%" "$VOL"
+    fi
+}

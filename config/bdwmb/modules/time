@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# DEPENDS ON: $TIME_FORMAT, date
+
+btime() {
+    printf "%s" "$(date "$TIME_FORMAT")"
+}

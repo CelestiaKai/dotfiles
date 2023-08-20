@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# DEPENDS ON: free, grep
+
+bram() {
+    FREE="$(free -h | grep -i mem)"
+    RAM_USED="$(echo "$FREE" | awk '{ print $3 }')"
+    RAM_TOTAL="$(echo "$FREE" | awk '{ print $2 }')"
+
+    printf 'M %s/%s' "$RAM_USED" "$RAM_TOTAL"
+}
