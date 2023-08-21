@@ -11,6 +11,7 @@
 <pre>
 Terminal: Kitty
 Status On Bar: <a href="https://ari-web.xyz/gh/bdwmb">Bdwmb</a>
+Shell: Fish
 </pre>
 <img src="/screenshots/LAF/SomethingOpen1.png">
 
