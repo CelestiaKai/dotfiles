@@ -1,13 +1,3 @@
-# coffee.baz-plugin
-
-# load baz
-#export BAZ_LOADER_ENABLED=true
-#_baz_loader="$HOME/.local/share/baz/loader.sh"
-
-# shellcheck disable=SC1090
-#[ ! -f "$_baz_loader" ] || source "$_baz_loader"
-
-#export COFFEE_CLR_USER="$(printf "\033[034m")"
 export EDITOR=vim
 
 PS1='-[\w]-> '
@@ -32,4 +22,4 @@ alias nofetch='neofetch --no_config'  # neofetch without any config
 #
 echo "Hello," $(date).
 
-[ "$(tty)" = '/dev/tty1' ] && exec startx
+#[ "$(tty)" = '/dev/tty1' ] && exec startx
