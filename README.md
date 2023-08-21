@@ -12,6 +12,6 @@
 Terminal: Kitty
 Status On Bar: <a href="https://ari-web.xyz/gh/bdwmb">Bdwmb</a>
 </pre>
-<img src="/screenshots/LAF/SomethingOpen.png">
+<img src="/screenshots/LAF/SomethingOpen1.png">
 
 <h2>This is nothing special, so don't expect anything good.. ?</h2>
