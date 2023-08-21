@@ -9,8 +9,8 @@ static const int vertpad            = 0;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "open sans:size=12" };
-static const char dmenufont[]       = "open sans:size=12";
+static const char *fonts[]          = { "jetbrains mono:size=12" };
+static const char dmenufont[]       = "jetbrains mono:size=15.5";
 static const char col_gray1[]       = "#282828";    
 static const char col_gray2[]       = "#282828";    
 static const char col_gray3[]       = "#d79921";    
