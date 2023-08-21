@@ -11,11 +11,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "open sans:size=12" };
 static const char dmenufont[]       = "open sans:size=12";
-static const char col_gray1[]       = "#282828";			/* #050014 */
-static const char col_gray2[]       = "#282828";    /* #444444 */	/* #050014 */
-static const char col_gray3[]       = "#d79921";    /* #bbbbbb */	/* #8e86df */
-static const char col_gray4[]       = "#282828";    /* #eeeeee */	/* #050014 */
-static const char col_cyan[]        = "#d79921";    /* #005577 */	/* #8e86df */
+static const char col_gray1[]       = "#282828";    
+static const char col_gray2[]       = "#282828";    
+static const char col_gray3[]       = "#d79921";    
+static const char col_gray4[]       = "#282828";    
+static const char col_cyan[]        = "#d79921";    
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
