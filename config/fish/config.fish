@@ -22,7 +22,7 @@ alias nofetch='neofetch --no_config'  # neofetch without any config
 
 # autostart 
 #
-#echo "Hello," $(date).
+echo "Hello," $(date).
 
 [ "$(tty)" = '/dev/tty1' ] && exec startx
 end
