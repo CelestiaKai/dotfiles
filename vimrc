@@ -11,7 +11,7 @@ set noshowmode
 set hlsearch
 
 let g:lightline = {
-	\ 'colorscheme': 'coffee',
+	\ 'colorscheme': 'solarized',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
@@ -31,11 +31,17 @@ Plug 'coffee-theme/lightline.vim'
 Plug 'lilydjwg/colorizer'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/seoul256.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-colorscheme coffee
+" colorscheme coffee
 " colorscheme catppuccin_mocha
+colorscheme solarized
+
+
+" lightline solarized dark
+set background=dark
