@@ -2,6 +2,8 @@ function fish_greeting
        # Empty function, no welcome message
    end
 
+fish_add_path -a "$HOME/.local/bin"
+
 if status is-interactive
 export EDITOR=vim
 export TERM=xterm-256color

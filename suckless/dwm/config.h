@@ -2,15 +2,15 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 4;        /* border pixel of windows */
-static const unsigned int gappx     = 10;        /* gaps between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 2;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int vertpad            = 0;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "jetbrains mono:size=12" };
-static const char dmenufont[]       = "jetbrains mono:size=15.5";
+static const char *fonts[]          = { "open sans:size=12" };
+static const char dmenufont[]       = "open sans:size=15.5";
 static const char col_gray1[]       = "#001e26";    
 static const char col_gray2[]       = "#001e26";    
 static const char col_gray3[]       = "#52676f";    
