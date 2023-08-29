@@ -9,7 +9,7 @@
 
 <h1>(Something Open) Look:</h1> 
 <pre>
-Terminal: Kitty
+Terminal: Kitty (Main), ST (Secondary)
 Status On Bar: <a href="https://ari-web.xyz/gh/bdwmb">Bdwmb</a>
 Shell: Fish
 </pre>
