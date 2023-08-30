@@ -24,6 +24,7 @@ alias kic='cd ~/.config/kitty/'       # cd to kitty
 alias rmpics='rm -rf ~/mpv-shot*'     # remove the compiled up screenshots
 alias weather='curl https://wttr.in/' # weather
 alias nofetch='neofetch --no_config'  # neofetch without any config
+alias mkdir='mkdir -v'
 
 # autostart 
 #
