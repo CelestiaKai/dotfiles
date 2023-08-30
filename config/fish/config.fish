@@ -8,6 +8,9 @@ if status is-interactive
 export EDITOR=vim
 export TERM=xterm-256color
 
+alias mv='mv -v'                      # verbose move
+alias rm='rm -v'                      # vebose remove
+alias cp='cp -v'                      # verbose copy
 alias c='clear'                       # clear
 alias v='vim'                         # vim 
 alias l='ls'                          # list (other variant)
