@@ -21,7 +21,7 @@ alias df='duf -hide special'          # df -> duf
 alias cat='batcat'                    # cat -> bat
 alias dwm='cd ~/sless/dwm/'           # cd to dwm
 alias kic='cd ~/.config/kitty/'       # cd to kitty
-alias rmpics='rm -rf mpv-shot*'       # remove the compiled up screenshots
+alias rmpics='rm -rf ~/mpv-shot*'     # remove the compiled up screenshots
 alias weather='curl https://wttr.in/' # weather
 alias nofetch='neofetch --no_config'  # neofetch without any config
 
