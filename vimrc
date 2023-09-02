@@ -1,5 +1,6 @@
 syntax on
 filetype plugin on
+nnoremap ; :
 
 set wildmenu
 set t_Co=256

@@ -65,7 +65,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 /*static const char *sscmd[] = { "scrot", "/tmp/%F_%T_$wx$h.png", "-e", "xclip -selection clipboard -target image/png -i $f", NULL };*/
 static const char *lockcmd[] = { "locking", NULL };
 static const char *sscmd[] = { "shot", NULL };
-static const char *chrcmd[] = { "chromium", NULL };
+static const char *chrcmd[] = { "firefox-bin", NULL };
 static const char *discmd[] = { "discord", NULL };
 static const char *spotcmd[] = { "spotify", NULL };
 
