@@ -43,6 +43,5 @@ call plug#end()
 " colorscheme catppuccin_mocha
 colorscheme solarized
 
-
 " lightline solarized dark
 set background=dark
