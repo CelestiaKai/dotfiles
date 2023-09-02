@@ -9,6 +9,7 @@ fish_add_path -a "$HOME/.local/bin"
 if status is-interactive
 export EDITOR=vim
 export TERM=xterm-256color
+export GPG_TTY="$(tty)"
 
 alias mv='mv -v'                      			# verbose move
 alias rm='rm -v'                      			# vebose remove
