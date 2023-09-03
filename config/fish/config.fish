@@ -11,24 +11,24 @@ export EDITOR=vim
 export TERM=xterm-256color
 export GPG_TTY="$(tty)"
 
-alias mv='mv -v'                      			    # verbose move
-alias rm='rm -v'                      			    # vebose remove
-alias cp='cp -v'                      			    # verbose copy
-alias c='clear'                       			    # clear
-alias v='vim'                         			    # vim 
-alias l='ls'                          			    # list (other variant)
-alias ls='lsd -lh'                    			    # better list
-alias la='lsd -lha'                   			    # list all
-alias ll='la'                         			    # list all (other variant)
-alias df='duf -hide special'          			    # df -> duf
-alias cat='bat'                       			    # cat -> bat
-alias dwm='cd ~/Documents/GIT/dotfiles/suckless/dwm/'  	    # cd to dwm
-alias kic='cd ~/.config/kitty/'       			    # cd to kitty
-alias rmpics='rm -rf ~/mpv-shot*'     			    # remove the compiled up screenshots
-alias weather='curl https://wttr.in/' 			    # weather
-alias nofetch='neofetch --no_config'  			    # neofetch without any config
-alias mkdir='mkdir -v'					    # verbose make dir
-alias start='sudo fullbright; startx ~/.xinitrc' 	    # startx alias (for my gentoo set-up mainly)
+alias mv='mv -v'                      			        # verbose move
+alias rm='rm -v'                      			        # vebose remove
+alias cp='cp -v'                      			        # verbose copy
+alias c='clear'                       			        # clear
+alias v='vim'                         			        # vim 
+alias l='ls'                          			        # list (other variant)
+alias ls='lsd -lh'                    			        # better list
+alias la='lsd -lha'                   			        # list all
+alias ll='la'                         			        # list all (other variant)
+alias df='duf -hide special'          			        # df -> duf
+alias cat='bat'                       			        # cat -> bat
+alias dwm='cd ~/Documents/GIT/dotfiles/suckless/dwm/'  	        # cd to dwm
+alias kic='cd ~/.config/kitty/'       			        # cd to kitty
+alias rmpics='rm -rf ~/mpv-shot*'     			        # remove the compiled up screenshots
+alias weather='curl https://wttr.in/' 			        # weather
+alias nofetch='neofetch --no_config'  			        # neofetch without any config
+alias mkdir='mkdir -v'					        # verbose make dir
+alias start='sudo ./.local/bin/fullbright && startx ~/.xinitrc' # startx alias (for my gentoo set-up mainly)
 
 # autostart 
 #
