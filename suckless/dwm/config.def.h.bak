@@ -19,11 +19,11 @@ static const char dmenufont[] = {
 	"open sans:size=15.5"
 };
 
-static const char col_gray1[]       = "#030304";    
-static const char col_gray2[]       = "#030304";    
-static const char col_gray3[]       = "#356996";    
-static const char col_gray4[]       = "#030304";    
-static const char col_cyan[]        = "#356996";    
+static const char col_gray1[]       = "#001e26";    
+static const char col_gray2[]       = "#001e26";    
+static const char col_gray3[]       = "#52676f";    
+static const char col_gray4[]       = "#001e26";    
+static const char col_cyan[]        = "#52676f";    
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

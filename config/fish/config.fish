@@ -1,7 +1,7 @@
 #[ -z "$TMUX" ] && [ "$DISPLAY" ] && command -v tmux >/dev/null && exec tmux -2 -l
 
 function fish_greeting
-	#	(replace if you want a greeting message.)
+	#	(change this if you want a greet message.)
    end
 
 fish_add_path -a "$HOME/.local/bin"
@@ -31,5 +31,5 @@ alias mkdir='mkdir -v'					        # verbose make dir
 
 # autostart 
 #
-#[ "$(tty)" = '/dev/tty1' ] && exec startx
+[ "$(tty)" = '/dev/tty1' ] && exec startx
 end

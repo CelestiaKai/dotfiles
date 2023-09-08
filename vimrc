@@ -27,6 +27,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins.
 "Plug 'itchyny/lightline.vim'
+Plug 'dylanaraps/wal.vim'
 Plug 'coffee-theme/coffee.vim'
 Plug 'coffee-theme/lightline.vim'
 Plug 'lilydjwg/colorizer'
@@ -41,7 +42,8 @@ call plug#end()
 
 " colorscheme coffee
 " colorscheme catppuccin_mocha
-colorscheme solarized
+" colorscheme solarized
+colorscheme wal
 
 
 " lightline solarized dark
