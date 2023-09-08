@@ -1,7 +1,7 @@
 #[ -z "$TMUX" ] && [ "$DISPLAY" ] && command -v tmux >/dev/null && exec tmux -2 -l
 
 function fish_greeting
-	#	echo "" "Hello," $(date).
+	#	(replace if you want a greeting message.)
    end
 
 fish_add_path -a "$HOME/.local/bin"
@@ -28,7 +28,6 @@ alias rmpics='rm -rf ~/mpv-shot*'     			        # remove the compiled up screen
 alias weather='curl https://wttr.in/' 			        # weather
 alias nofetch='neofetch --no_config'  			        # neofetch without any config
 alias mkdir='mkdir -v'					        # verbose make dir
-alias start='sudo ./.local/bin/fullbright && startx ~/.xinitrc' # startx alias (for my gentoo set-up mainly)
 
 # autostart 
 #

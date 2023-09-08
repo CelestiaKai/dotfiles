@@ -5,17 +5,26 @@
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 2;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int vertpad            = 0;       /* vertical padding of bar */
-static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "open sans:size=12" };
-static const char dmenufont[]       = "open sans:size=15.5";
+static const int vertpad            = 0;       /* vertical padding of bar */
+static const int sidepad            = 0;       /* horizontal padding of bar */
+
+static const char *fonts[] = { 
+	"font awesome:size=12",
+	"open sans:size=12" 
+};
+
+static const char dmenufont[] = {
+	"open sans:size=15.5"
+};
+
 static const char col_gray1[]       = "#001e26";    
 static const char col_gray2[]       = "#001e26";    
 static const char col_gray3[]       = "#52676f";    
 static const char col_gray4[]       = "#001e26";    
 static const char col_cyan[]        = "#52676f";    
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -23,7 +32,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+/* static const char *tags[] = { "", "", "", "", "", "6", "7", "8", "9" }; */
+static const char *tags[] = { "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -63,7 +73,6 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4,"-p", "DWM:", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 /*static const char *sscmd[] = { "scrot", "/tmp/%F_%T_$wx$h.png", "-e", "xclip -selection clipboard -target image/png -i $f", NULL };*/
-static const char *lockcmd[] = { "locking", NULL };
 static const char *sscmd[] = { "shot", NULL };
 static const char *chrcmd[] = { "chromium", NULL };
 static const char *discmd[] = { "discord", NULL };
@@ -81,7 +90,6 @@ static const Key keys[] = {
 	{ 0,                XF86XK_AudioMute,      spawn,           {.v = mutevol } },
 	{ 0,         XF86XK_AudioRaiseVolume,      spawn,           {.v = upvol   } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = sscmd } },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
 	{ MODKEY,                       XK_a,      spawn,          {.v = spotcmd } },
 	{ MODKEY,                       XK_x,      spawn,          {.v = discmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = chrcmd } },
