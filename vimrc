@@ -42,8 +42,8 @@ call plug#end()
 
 " colorscheme coffee
 " colorscheme catppuccin_mocha
-" colorscheme solarized
-colorscheme wal
+colorscheme solarized
+" colorscheme wal
 
 
 " lightline solarized dark

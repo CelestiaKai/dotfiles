@@ -2,28 +2,28 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 4;        /* border pixel of windows */
-static const unsigned int gappx     = 15;        /* gaps between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 2;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const int vertpad            = 10;       /* vertical padding of bar */
-static const int sidepad            = 10;       /* horizontal padding of bar */
+static const int vertpad            = 0;       /* vertical padding of bar */
+static const int sidepad            = 0;       /* horizontal padding of bar */
 
 static const char *fonts[] = { 
-	"jetbrains mono nerd font:size=15.5",
-	"font awesome:size=15.5"
+	"jetbrains mono nerd font:size=12",
+	"font awesome:size=12"
 };
 
 static const char dmenufont[] = {
 	"open sans:size=15.5"
 };
 
-static const char col_gray1[]       = "#030304";    
-static const char col_gray2[]       = "#030304";    
-static const char col_gray3[]       = "#356996";    
-static const char col_gray4[]       = "#030304";    
-static const char col_cyan[]        = "#356996";    
+static const char col_gray1[]       = "#001e26";    
+static const char col_gray2[]       = "#001e26";    
+static const char col_gray3[]       = "#52676f";    
+static const char col_gray4[]       = "#001e26";    
+static const char col_cyan[]        = "#52676f";    
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
