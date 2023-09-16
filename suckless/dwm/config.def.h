@@ -3,7 +3,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 2;        /* gaps between windows */
+static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -22,9 +22,9 @@ static const char dmenufont[] = {
 
 static const char col_gray1[]       = "#000000";    
 static const char col_gray2[]       = "#000000";    
-static const char col_gray3[]       = "#FFFFFF";    
+static const char col_gray3[]       = "#BBBBBB";    
 static const char col_gray4[]       = "#000000";    
-static const char col_cyan[]        = "#FFFFFF";    
+static const char col_cyan[]        = "#BBBBBB";    
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
