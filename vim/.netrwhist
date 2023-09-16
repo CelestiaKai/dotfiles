@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/intmain/Documents/GIT/dotfiles/vim/plugged'
-let g:netrw_dirhist_2='/home/intmain/Documents/GIT/dotfiles/vim'
-let g:netrw_dirhist_1='/home/intmain/.cache'

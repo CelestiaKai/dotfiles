@@ -12,7 +12,7 @@ set noshowmode
 set hlsearch
 
 let g:lightline = {
-	\ 'colorscheme': 'solarized',
+			\ 'colorscheme': '16color',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
@@ -26,8 +26,8 @@ let g:lightline = {
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins.
-"Plug 'itchyny/lightline.vim'
-Plug 'dylanaraps/wal.vim'
+" Plug 'itchyny/lightline.vim'
+" Plug 'dylanaraps/wal.vim'
 Plug 'coffee-theme/coffee.vim'
 Plug 'coffee-theme/lightline.vim'
 Plug 'lilydjwg/colorizer'
@@ -41,8 +41,8 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 " colorscheme coffee
-" colorscheme catppuccin_mocha
-colorscheme solarized
+  colorscheme catppuccin_mocha " right now im using this for the Black Theme.
+" colorscheme solarized
 " colorscheme wal
 
 

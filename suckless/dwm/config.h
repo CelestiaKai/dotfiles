@@ -20,11 +20,11 @@ static const char dmenufont[] = {
 	"open sans:size=15.5"
 };
 
-static const char col_gray1[]       = "#001e26";    
-static const char col_gray2[]       = "#001e26";    
-static const char col_gray3[]       = "#52676f";    
-static const char col_gray4[]       = "#001e26";    
-static const char col_cyan[]        = "#52676f";    
+static const char col_gray1[]       = "#000000";    
+static const char col_gray2[]       = "#000000";    
+static const char col_gray3[]       = "#FFFFFF";    
+static const char col_gray4[]       = "#000000";    
+static const char col_cyan[]        = "#FFFFFF";    
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -42,7 +42,6 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "mpv",      NULL,     NULL,           0 << 0,    0,          1,           0,        -1 },
 	{ "Chromium", NULL,     NULL,           1 << 1,    0,          0,           1,        -1 },
 	{ "Spotify",  NULL,     NULL,           1 << 2,    0,          0,           1,        -1 },
 	{ "code-oss", NULL,     NULL,           1 << 3,    0,          0,           1,        -1 },

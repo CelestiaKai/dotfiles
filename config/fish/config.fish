@@ -31,5 +31,5 @@ alias mkdir='mkdir -v'					        # verbose make dir
 
 # autostart 
 #
-[ "$(tty)" = '/dev/tty1' ] && exec startx
+#[ "$(tty)" = '/dev/tty1' ] && exec startx
 end
