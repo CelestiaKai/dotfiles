@@ -12,7 +12,7 @@ set noshowmode
 set hlsearch
 
 let g:lightline = {
-			\ 'colorscheme': '16color',
+	\ 'colorscheme': 'coffee',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
@@ -40,8 +40,8 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-" colorscheme coffee
-  colorscheme catppuccin_mocha " right now im using this for the Black Theme.
+ colorscheme coffee
+" colorscheme catppuccin_mocha " right now im using this for the Black Theme.
 " colorscheme solarized
 " colorscheme wal
 

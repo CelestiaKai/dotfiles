@@ -23,6 +23,7 @@ alias ll='la'                         			        # list all (other variant)
 alias df='duf -hide special'          			        # df -> duf
 alias cat='bat'                       			        # cat -> bat
 alias dwm='cd ~/Documents/GIT/dotfiles/suckless/dwm/'  	        # cd to dwm
+alias slock='cd ~/Documents/GIT/dotfiles/suckless/slock/'       # cd to slock
 alias kic='cd ~/.config/kitty/'       			        # cd to kitty
 alias rmpics='rm -rf ~/mpv-shot*'     			        # remove the compiled up screenshots
 alias weather='curl https://wttr.in/' 			        # weather
@@ -31,5 +32,6 @@ alias mkdir='mkdir -v'					        # verbose make dir
 
 # autostart 
 #
+nitch
 #[ "$(tty)" = '/dev/tty1' ] && exec startx
 end
