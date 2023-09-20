@@ -14,7 +14,6 @@ Status On Bar: <a href="https://ari-web.xyz/gh/bdwmb">Bdwmb</a>
 Shell: Fish
 </pre>
 <img src="/screenshots/LAF/somethingopen1.jpg">
-<img src="/screenshot">
 
 <h2>This is nothing special, so don't expect anything good</h2>
 <p1>(may look different if installed.)</p1>
