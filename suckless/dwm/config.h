@@ -45,6 +45,7 @@ static const Rule rules[] = {
 	{ "Chromium", NULL,     NULL,           1 << 1,    0,          0,           1,        -1 },
 	{ "Spotify",  NULL,     NULL,           1 << 2,    0,          0,           1,        -1 },
 	{ "code-oss", NULL,     NULL,           1 << 3,    0,          0,           1,        -1 },
+	{ "Audacity", NULL,     NULL,           1 << 4,    0,          0,           0,        -1 },
 	{ "kitty",    NULL,     NULL,           0 << 0,    0,          1,           0,        -1 },
 	{ NULL,       NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
@@ -84,6 +85,9 @@ static const char *discmd[] = { "discord", NULL };
 static const char *spotcmd[] = { "spotify", NULL };
 static const char *lockcmd[] = { "slock", NULL };
 
+static const char *splusscmd[] = { "xbacklight", "-inc", "+5%", NULL };
+static const char *sminuscmd[] = { "xbacklight", "-inc", "-5%", NULL };
+
 
 static const char *upvol[]      = { "/usr/bin/pactl",   "set-sink-volume", "0",      "+5%",      NULL };
 static const char *downvol[]    = { "/usr/bin/pactl",   "set-sink-volume", "0",      "-5%",      NULL };
@@ -92,6 +96,8 @@ static const char *mutevol[]    = { "/usr/bin/pactl",   "set-sink-mute",   "0", 
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ 0,        XF86XK_MonBrightnessDown,      spawn,           {.v = sminuscmd } },
+	{ 0,          XF86XK_MonBrightnessUp,      spawn,           {.v = splusscmd } },
 	{ 0,         XF86XK_AudioLowerVolume,      spawn,           {.v = downvol } },
 	{ 0,                XF86XK_AudioMute,      spawn,           {.v = mutevol } },
 	{ 0,         XF86XK_AudioRaiseVolume,      spawn,           {.v = upvol   } },
