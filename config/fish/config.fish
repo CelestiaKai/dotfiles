@@ -34,5 +34,5 @@ alias mkdir='mkdir -v'					        # verbose make dir
 # autostart 
 #
 nitch
-[ "$(tty)" = '/dev/tty1' ] && exec startx
+#[ "$(tty)" = '/dev/tty1' ] && exec startx
 end
