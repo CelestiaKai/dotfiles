@@ -85,8 +85,8 @@ static const char *discmd[] = { "discord", NULL };
 static const char *spotcmd[] = { "spotify", NULL };
 static const char *lockcmd[] = { "slock", NULL };
 
-static const char *splusscmd[] = { "xbacklight", "-inc", "+5%", NULL };
-static const char *sminuscmd[] = { "xbacklight", "-inc", "-5%", NULL };
+static const char *splusscmd[] = { "xbacklight", "-inc", "+10%", NULL };
+static const char *sminuscmd[] = { "xbacklight", "-inc", "-10%", NULL };
 
 
 static const char *upvol[]      = { "/usr/bin/pactl",   "set-sink-volume", "0",      "+5%",      NULL };
